@@ -1,38 +1,104 @@
-.App {
+html {
+  overflow-y: scroll;
+}
+
+.container{
+  /* width: 60%; */
+  /* text-align: center;  */
+  /* margin: 100px auto; */
+  /* new */
+  width: 60%;
+  margin: 100px auto;  
+  /* background-color: #333;  */
+  border-radius: 6px;
+  /* background: white; */
+  overflow: hidden;
+  border: 2px solid black;
+}
+
+#warning{
+  color: red;
+}
+
+
+#heading{
+  margin: 15px;
   text-align: center;
+} 
+
+.inputIcon{
+  /* width: 100%; */
+  /* margin: auto; */
+  /* margin-top: 90px; */
+  /* margin-bottom: 10px; */
+  /* text-align: center; */
+  position: relative;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+#input{
+  /* width: 100%; */
+  /* padding: 5px; */
+  /* padding-right: 60px; */
+  /* align-items: center; */
+  /* width: max-content; */
+  /* size: 45px; */
+  /* font-size: 25px; */
+  /* new */
+  width: 94%;
+/* display: block; */
+/* text-align: center; */
+/* align-items: center; */
+/* align-content: center; */
+/* background: transparent; */
+border: 0;
+outline: none;
+font-size: 20px;
+color: black; 
+padding: 5px;
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
+/* input[type="text"] {
+  font-size:25px;
+} */
+
+ #icon{
+  font-size: 22px;
 }
 
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
+.suggestionList{
+  border-top: 2px solid black;
+  /* width: 100%; */
+  /* margin: auto; */
+  /* overflow-y: scroll; */
+  /* height: 200px; */
+  /* scroll-behavior: smooth; */
+ } 
+ 
+
+.suggestionList > div{
+  /* border: solid 1px black; */
+  /* padding: 8px; */
+  /* text-align: left; */
+  /* new */
+  padding: 10px;
+  color: black;
+  font-size: 15px;
+  border-top: 1px solid rgb(214, 201, 201);
 }
 
-.App-link {
-  color: #61dafb;
+ .suggestionList > div:hover{
+  background-color:rgb(154, 141, 230);
+} 
+
+.inputIcon > i{
+  /* position: absolute; */
+  /* top: 10px;
+  right: 1px; */
+  /* display: none; */
+  /* new */
+  position: absolute;
+  top: 5px;
+  right: 19px
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
-}
+
